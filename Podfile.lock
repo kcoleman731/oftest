@@ -1,0 +1,25 @@
+PODS:
+  - LayerIdentity (0.1.0):
+    - LayerKit
+  - LayerKit (0.12.0-rc4)
+
+DEPENDENCIES:
+  - LayerIdentity (from `git@github.com:layerhq/layer-identity-ios.git`)
+  - LayerKit (from `~/Dropbox (Layer)/Layer/Builds/iOS/LayerKit-0.12.0-rc4`)
+
+EXTERNAL SOURCES:
+  LayerIdentity:
+    :git: git@github.com:layerhq/layer-identity-ios.git
+  LayerKit:
+    :path: "~/Dropbox (Layer)/Layer/Builds/iOS/LayerKit-0.12.0-rc4"
+
+CHECKOUT OPTIONS:
+  LayerIdentity:
+    :commit: bbc691bab21f0b6b3d2e2cffc4967dbf93dfa07e
+    :git: git@github.com:layerhq/layer-identity-ios.git
+
+SPEC CHECKSUMS:
+  LayerIdentity: 7f5b8b0e3f4c2645016f657a79da571c7d2cabf6
+  LayerKit: 1743e892354d6523bcc9d97f5c8ac7f5173b08bc
+
+COCOAPODS: 0.36.4
