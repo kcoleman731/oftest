@@ -16,6 +16,7 @@
 		D6C302691AE6E12200130464 /* OFTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C302681AE6E12200130464 /* OFTestTests.m */; };
 		D6C302741AE6E33400130464 /* OFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C302731AE6E33400130464 /* OFRootViewController.m */; };
 		D6C302761AE6E7D600130464 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C302751AE6E7D600130464 /* test.png */; };
+		D6C3027D1AE6F07000130464 /* LYRIdentityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3027C1AE6F07000130464 /* LYRIdentityManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		D6C302721AE6E33400130464 /* OFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFRootViewController.h; sourceTree = "<group>"; };
 		D6C302731AE6E33400130464 /* OFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFRootViewController.m; sourceTree = "<group>"; };
 		D6C302751AE6E7D600130464 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		D6C3027B1AE6F07000130464 /* LYRIdentityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYRIdentityManager.h; sourceTree = "<group>"; };
+		D6C3027C1AE6F07000130464 /* LYRIdentityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYRIdentityManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		D6C3024B1AE6E12200130464 /* OFTest */ = {
 			isa = PBXGroup;
 			children = (
+				D6C3027B1AE6F07000130464 /* LYRIdentityManager.h */,
+				D6C3027C1AE6F07000130464 /* LYRIdentityManager.m */,
 				D6C302751AE6E7D600130464 /* test.png */,
 				D6C302721AE6E33400130464 /* OFRootViewController.h */,
 				D6C302731AE6E33400130464 /* OFRootViewController.m */,
@@ -285,6 +290,7 @@
 				D6C302521AE6E12200130464 /* AppDelegate.m in Sources */,
 				D6C302741AE6E33400130464 /* OFRootViewController.m in Sources */,
 				D6C3024F1AE6E12200130464 /* main.m in Sources */,
+				D6C3027D1AE6F07000130464 /* LYRIdentityManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +417,10 @@
 			baseConfigurationReference = 87A76DC5E043340149ED9F92 /* Pods-OFTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LayerKit.embeddedframework",
+				);
 				INFOPLIST_FILE = OFTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +432,10 @@
 			baseConfigurationReference = D27FC721709149C657B683EC /* Pods-OFTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LayerKit.embeddedframework",
+				);
 				INFOPLIST_FILE = OFTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
